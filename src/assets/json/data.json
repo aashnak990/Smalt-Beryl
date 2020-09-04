@@ -1,5 +1,5 @@
 [{
-        "card-no": 1,
+        "card-no": "1",
         "Name": "Basics of SCM",
         "instructor": "Ajay Ahuja, DISET",
         "Date": "17th June 2020",
@@ -7,7 +7,7 @@
         "tags": "Webinar to conduct workshop on basics of SCM and its future"
     },
     {
-        "card-no": 2,
+        "card-no": "2",
         "Name": "Impact of Covid-19 on IT Industry",
         "instructor": "Ajay Ahuja, EY",
         "Date": "17th June 2020",
@@ -15,7 +15,7 @@
         "tags": "Webinar to discuss impact on Covid-19 on the IT Hardware Manufactucting industry."
     },
     {
-        "card-no": 3,
+        "card-no": "3",
         "Name": "Stress Management",
         "instructor": "Ajay Ahuja, CII",
         "Date": "17th June 2020",
@@ -24,7 +24,7 @@
     },
 
     {
-        "card-no": 4,
+        "card-no": "4",
         "Name": "Changing Industry Standards",
         "instructor": "Ajay Ahuja, GERMI",
         "Date": "17th June 2020",
