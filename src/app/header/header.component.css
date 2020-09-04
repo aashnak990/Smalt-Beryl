@@ -1,0 +1,26 @@
+#navigationbar{
+    background-color:white;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left: 10px;
+    padding-right:10px ;
+
+}
+
+#nav-option{
+    font-weight: bold;
+    margin: 7px;
+}
+@media only screen and (max-width: 480px) {
+	#logo{     
+		padding-top: 0px;
+		text-align:center;    
+        padding-bottom: 0px;
+        transform:translateX(-85%);
+    }
+
+}
+.active{
+    color: red !important;
+ }
+

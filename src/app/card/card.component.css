@@ -1,0 +1,21 @@
+.content { 
+    padding: 16px; 
+  }
+  
+  .content > mat-card { 
+    width: 200px; 
+  }
+  #view-details {
+    background-color:rgb(67, 168, 202);
+    color:white;
+    float: right;
+    outline: none; 
+  }
+  #enroll{
+    background-color: green;
+    color:white;
+    outline: none; 
+  
+  }
+
+ 
