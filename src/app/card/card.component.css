@@ -1,5 +1,5 @@
 .content { 
-    padding: 16px; 
+    padding: 16px;
   }
   
   .content > mat-card { 
@@ -17,5 +17,9 @@
     outline: none; 
   
   }
-
- 
+.modal .show{
+  display: block;
+}
+#mat-content{
+  margin-left: -20px;
+}
