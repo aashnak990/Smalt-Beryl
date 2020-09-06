@@ -3,6 +3,7 @@
     height: 300px;
     float: right; 
 }
+
 #container{
     background: #1f8da8;  /* fallback for old browsers */
     background-image: linear-gradient(to right,  #7fd9e9, #1f8da8 60%);
@@ -11,7 +12,7 @@
 #caption{
     text-align: left;
     margin: 0px 0px 30px -200px;
-    color: black;
+    color: #000000;
 }
 
 *:focus {
@@ -19,9 +20,9 @@
 }
 
  #btn{
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     border-radius: 10px;
-    color:rgb(245, 95, 35);
+    color:#f55f23;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -33,13 +34,10 @@
     
   }
   
- h2 {
+h2 {
       font-weight: 500;
       font-size: 30px;
-    
-    
-  }
-  
+    }
   
   @media only screen and (max-width: 480px) {
 	.image-slide{     
@@ -69,7 +67,7 @@
     }
     }
 
-    @media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
         .image-slide{     
             visibility: hidden;
         }
@@ -95,5 +93,5 @@
             
             padding-bottom: 4.5rem;
         }
-        }
+}
     

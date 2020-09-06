@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../services/user.service';
+import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-card',
@@ -8,8 +10,28 @@ import { UsersService } from '../services/user.service';
 })
 export class CardComponent implements OnInit {
   users: any;
+  closeResult=''
 
-  constructor( private userService: UsersService) { }
+  constructor( private userService: UsersService,
+                private modalService: NgbModal) { }
+
+  open(content) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-title'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
+  }
 
   ngOnInit() {
     this.userService.getData().subscribe((data)=>{

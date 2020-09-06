@@ -2,24 +2,25 @@
     padding: 16px;
   }
   
-  .content > mat-card { 
+.content > mat-card { 
     width: 200px; 
   }
-  #view-details {
+#view-details {
     background-color:rgb(67, 168, 202);
     color:white;
     float: right;
     outline: none; 
   }
-  #enroll{
-    background-color: green;
+#enroll{
+    background-color: #008000;
     color:white;
     outline: none; 
   
   }
 .modal .show{
   display: block;
-}
+ }
 #mat-content{
   margin-left: -20px;
-}
+ }
+ 
