@@ -8,9 +8,12 @@
         overflow-x: hidden;
     }
 }
-html, body {
+ html,body {
     overflow-x: hidden;
   }
  body {
     width:100%;
   }
+  ::-webkit-scrollbar { 
+    width: 0px!important;
+  } 

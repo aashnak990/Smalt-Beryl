@@ -32,11 +32,11 @@ export class CardComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
-
+  
   ngOnInit() {
     this.userService.getData().subscribe((data)=>{
       this.users=data;
     })
   }
-
+ 
 }

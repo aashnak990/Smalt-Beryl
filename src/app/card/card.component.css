@@ -1,8 +1,8 @@
-.content { 
+#card-info { 
     padding: 16px;
   }
   
-.content > mat-card { 
+  #card-info > mat-card { 
     width: 200px; 
   }
 #view-details {
@@ -17,10 +17,26 @@
     outline: none; 
   
   }
-.modal .show{
-  display: block;
- }
+
 #mat-content{
   margin-left: -20px;
  }
- 
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #929292b7;
+  text-align: left;
+  padding: 8px;
+}
+#stress{
+  color: #6495ed;
+}
+th{
+  background-color: #d6d6d6;
+  
+}
+  
