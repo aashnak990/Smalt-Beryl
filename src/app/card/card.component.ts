@@ -23,6 +23,14 @@ export class CardComponent implements OnInit {
     });
   }
 
+  rise(content12) {
+    this.modalService.open(content12, {ariaLabelledBy: 'modal-title'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
