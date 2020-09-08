@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap'
-import { ControlContainer } from '@angular/forms';
 
 @Component({
   selector: 'app-slider',
@@ -8,7 +7,8 @@ import { ControlContainer } from '@angular/forms';
   styleUrls: ['./slider.component.css'],
   providers: [ NgbCarouselConfig]
 })
-export class SliderComponent implements OnInit {
+
+export class SliderComponent implements OnInit {      
 
   constructor(config: NgbCarouselConfig) {
     config.interval = 2000;

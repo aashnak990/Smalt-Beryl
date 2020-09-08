@@ -15,6 +15,7 @@ export class CardComponent implements OnInit {
   constructor( private userService: UsersService,
                 private modalService: NgbModal) { }
 
+//modal service for details                
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
@@ -22,7 +23,8 @@ export class CardComponent implements OnInit {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
-
+  
+//modal service for enroll
   rise(content12) {
     this.modalService.open(content12, {ariaLabelledBy: 'modal-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
